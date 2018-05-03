@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Play Hive index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <style>
+            a.hive-colors-a:active{
+                color:rgb(233, 164, 36);
+            }
+            a.hive-colors-a:hover{
+                color:rgb(168, 120, 31);
+            }
+            a.hive-colors-a:visited{
+                color:rgba(226, 161, 39);
+            }
+            a.hive-colors-a{
+                color:rgba(226, 161, 39);
+            }
+            a.shit:active{
+                color:rgb(189, 189, 189);
+            }
+            a.shit:hover{
+                color:rgb(175, 174, 171);
+            }
+            a.shit:visited{
+                color:rgb(255, 255, 255);
+            }
+            a.shit{
+                color:rgb(255, 255, 255);
+            }
+            .carousel-item.active,
+            .carousel-item-next,
+            .carousel-item-prev {
+            display: block;
+            background-size:100%;
+            }
+            /*
+            .carousel-inner {
+                background: url("./img/bg3.jpg") bottom center no-repeat;
+                min-height: 490px;  
+            }
+            .carousel-caption {
+                position: initial;
+            }
+
+            .carousel-control.left, .carousel-control.right {
+                background: transparent;
+            }
+            */
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top ">
+        <a class="navbar-brand" href="#">PlayHive_logo.jpg</a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-hive">О прокте</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-hive">Наши особености</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hive-staff">Наша команда</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hive-servers">Наши сервера</a>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Прочее
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item hive-colors-a" href="#">Наш Форум</a>
+                      <a class="dropdown-item hive-colors-a" href="#"><i class="fab fa-discord fa-2x"></i> Discord</a>
+                      <a class="dropdown-item hive-colors-a" href="#"><i class="fab fa-vk fa-2x"></i>VK</a>
+                    </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="hero" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#hero" data-slide-to="0" class="active"></li>
+          <li data-target="#hero" data-slide-to="1"></li>
+          <li data-target="#hero" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/bg1.png" width=100%  alt="Los Angeles">
+            <div class="carousel-caption">
+                <h1>Добро пожалоать на <span class="hive-colors-bold font-weight-light">PlayHive</span>!</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/bg2.png" width=100% alt="Chicago">
+            <div class="carousel-caption">
+                <h1>Место уникального геймплея и времяпропривождения!</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/bg3.png" width=100% alt="New York">
+            <div class="carousel-caption">
+                <h1>Мы очень надеемся, что вам у нас понравится!</h1>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#hero" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
+      <div class="jumbotron jumbotron-fluid jumbotron-paral">
+        <center>
+            <h1 style="color: #ffff">Здраствуйте</h1>
+            <h3 style="color: #ffff">Добро пожаловать на наш проект!</h3>
+            <h3 style="color: #ffff">Мы очень надеемся что вам у нас понравится!</h3>
+        </center>
+      </div>
+      <div class="container" id="about-hive">
+          <center>
+              <h1 style="padding-bottom:2rem;">Кто мы такие и какие наши цели?</h1>
+          </center>
+          <div class="row" style="padding-bottom: 50px;">
+              <div class="col-md-4">
+                <center><h2>Что это за проект?</h2>
+                <p>Я отвечу на твой вопрос. Это - проект, который создается самими пользователями, тобишь <span class="hive-colors">тобою</span></p>
+                </center>
+              </div>
+              <div class="col-md-4">
+                <center>
+                    <h2>Какие ваши цели?</h2>
+                    <p>Наша цель - создать качественный проект, где не будет никакого доната, а так же где можно будет провести хорошо время!</p>
+                </center>
+              </div>
+              <div class="col-md-4">
+                <center>
+                    <h2>А насколько вы хороши?</h2>
+                    <p>На данный вопрос мы не можем ответить, ибо мы только только все основали.</p>
+                </center>
+              </div>
+              <div class="col-md-4">
+                  <center>
+                      <h2>Могу ли я помочь развитию проекта?</h2>
+                      <p>Да,вы можете помочь в развитии как деньгами так и в разроботке. Т.к в нашем проекте отсуствует как таковой донат, то любые пожертвования будут идти на поддержание жизни проекта.</p>
+                  </center>
+              </div>
+              <div class="col-md-4">
+                    <center>
+                        <h2>А что насчет разработки?</h2>
+                        <p>У нас будет несколько репозиториев приватных и публичных. В публичных будет доступен код прошлых обновлений или тоо, что мы не используем.</p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                        <center>
+                            <h2>Как я могу принять участие в этом?</h2>
+                            <p>Все достаточно просто, все что нужно сделать, это заполнить форму и все!</p>
+                            <button class="btn btn-primary"><a href="#" class="shit">Заполнить форму</a></button>
+                        </center>
+                </div>
+
+
+          </div>
+      </div>
+      <div  class="jumbotron jumbotron-fluid jumbotron-paral">
+          <h1>    </h1>
+          <h1>    </h1>
+      </div>
+      <div id="why-hive" class="container" style="padding-bottom:50px;">
+          <center>
+              <h1 style="padding-bottom: 50px;">Почему именно наш проект?</h1>
+          </center>
+          <div class="row">
+              <div class="col-md-4">
+                <center>
+                    <h2><i class="fas fa-wrench"></i>  Стабильность</h2>
+                    <p>Все обновления будут приходить уже провереные людми, которые их пишут, ибо наш проект это чистой воды <span style="font-family: cursive;">open-source</span>.</p>
+                </center>
+              </div>
+              <div class="col-md-4">
+                  <center>
+                      <h2><i class="fas fa-server"></i> Оборудование</h2>
+                      <p>Вместо того, что бы держать сборку на одном сервере у нас будет несколько серверов в разных регионах. К примеру в России будет основые 3 сервера: <b>Москва, Сибирь, ЮГ</b></b></p>
+                  </center>
+              </div>
+              <div class="col-md-4">
+                  <center>
+                    <h2><i class="fas fa-hand-holding-usd"></i> Донат</h2>
+                    <p>Доната на проекте не будет вообще, мы решили что нужно делать хорошее для людей бесплатным, т.к платное это для тех, кто делает дерьмо!</p>
+                  </center>
+              </div>
+              <div class="col-md-4">
+                <center>
+                    <h2><i class="fas fa-users"></i> Сообщество</h2>
+                    <p>Нашы игроки очень адеватные, они соблюдают правила сервера и вообще они очень хорошие? </p>
+                </center>
+              </div>
+              <div class="col-md-4">
+                    <center>
+                        <h2><i class="fab fa-github"></i> Открытость</h2>
+                        <p>Весь исходный код сервера мы будет публиковать на GitHub, BitBucket, GitLab для удобства наших разработчиков и открытости.</p>
+                    </center>
+              </div>
+              <div class="col-md-4">
+                    <center>
+                        <h2><i class="fas fa-shield-alt"></i> Администрация</h2>
+                        <p>Вся наша администрация - это люди с большым опытом, все они имеют возрасть 18+. Администрация всегда будет вам помогать и отвечать на ваши вопросы, даже если последние будут просто идиотскими.</p>
+                    </center>
+              </div>
+          </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid jumbotron-paral">
+          <h1>  </h2>
+            <h1>   </h1>
+            <h1>   </h1>
+      </div>
+      <div id="hive-stuff" class="container" style="padding-bottom: 50px;">
+          <center>
+              <h1 style="padding-bottom:2rem;">Наша команда</h1>
+          </center>
+          <div class="row">
+              <div class="col-md-6">
+                  <center>
+                        <img src="https://www.styleshout.com/templates/preview/Puremedia10/images/team/member02-k.jpg" class="rounded-circle" width="90px" height="90px"> 
+                        <h3>xpuska</h3>
+                        <h5>Ссылки на профили: </h5>
+                        <span><a href=""><i class="fab fa-vk fa-2x"></i></a>   <a href=""><i class="fab fa-steam fa-2x"></i></a>   <a href=""><i class="fab fa-discord fa-2x"></i></a></span>
+                    
+                  </center>
+              </div>
+              <div class="col-md-6">
+                    <center>
+                            <img src="https://www.styleshout.com/templates/preview/Puremedia10/images/team/member02-k.jpg" class="rounded-circle" width="90px" height="90px"> 
+                            <h3>Deutsch Stellvertreter</h3>
+                            <h5>Ссылки на профили: </h5>
+                            <span><a href=""><i class="fab fa-vk fa-2x"></i></a>   <a href=""><i class="fab fa-steam fa-2x"></i></a>   <a href=""><i class="fab fa-discord fa-2x"></i></a></span>
+                    
+                    </center>
+                </div>
+              <div class="col-md-6">
+                    <center>
+                            <img src="https://www.styleshout.com/templates/preview/Puremedia10/images/team/member02-k.jpg" class="rounded-circle" width="90px" height="90px"> 
+                            <h3>Deutsch Stellvertreter</h3>
+                            <p>Lorem ipsum dolor sit amet, ex quem purto vel, adhuc dolores ad nam. Id probatus consequuntur vel, ne vis sonet voluptaria neglegentur. Ea eam nostro molestie, prima explicari definiebas ex mei.</p>
+                    
+                    </center>
+              </div>
+              <div class="col-md-6">
+                    <center>
+                            <img src="https://www.styleshout.com/templates/preview/Puremedia10/images/team/member02-k.jpg" class="rounded-circle" width="90px" height="90px"> 
+                            <h3>Deutsch Stellvertreter</h3>
+                            <p>Lorem ipsum dolor sit amet, ex quem purto vel, adhuc dolores ad nam. Id probatus consequuntur vel, ne vis sonet voluptaria neglegentur. Ea eam nostro molestie, prima explicari definiebas ex mei.</p>
+                    
+                    </center>
+              </div>
+          </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid jumbotron-paral">
+
+      </div>
+      <div class="container" id="hive-servers">
+          <center>
+                <h1>Наши серверы</h1>
+          </center>
+          <div class="row">
+              <div class="col-md-6">
+                  <center>
+                      <b>Руссикй DarkRP #1</b>
+                      <div class="container">
+                      <b>Режим: </b> <p> DarkRP</p>
+                      <b>Карта: </b> <p> rp_hive_city</p>
+                      <b>Игроков: </b> <div class="progress">
+                            <div class="progress-bar bg-warning" style="width:25%">25/100</div>
+                            </div>
+                      </div>   
+                  </center>
+              </div>
+              <div class="col-md-6">
+                    <center>
+                        <b>Руссикй DarkRP #1</b>
+                        <div class="container">
+                        <b>Режим: </b> <p> DarkRP</p>
+                        <b>Карта: </b> <p> rp_hive_city</p>
+                        <b>Игроков: </b> <div class="progress">
+                              <div class="progress-bar bg-warning" style="width:25%">25/100</div>
+                              </div>
+                        </div>   
+                    </center>
+                </div>
+                <div class="col-md-6">
+                        <center>
+                            <b>Руссикй DarkRP #1</b>
+                            <div class="container">
+                            <b>Режим: </b> <p> DarkRP</p>
+                            <b>Карта: </b> <p> rp_hive_city</p>
+                            <b>Игроков: </b> <div class="progress">
+                                  <div class="progress-bar bg-warning" style="width:25%">25/100</div>
+                                  </div>
+                            </div>   
+                        </center>
+                    </div>
+                    <div class="col-md-6">
+                            <center>
+                                <b>Руссикй DarkRP #1</b>
+                                <div class="container">
+                                <b>Режим: </b> <p> DarkRP</p>
+                                <b>Карта: </b> <p> rp_hive_city</p>
+                                <b>Игроков: </b> <div class="progress">
+                                      <div class="progress-bar bg-warning" style="width:25%">25/100</div>
+                                      </div>
+                                </div>   
+                            </center>
+                    </div>
+          </div>
+      </div>
+      <div class="container container-empty">
+            <h1></h1>
+            <h1></h1>
+      </div>
+      <footer class="footer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <center>
+                            <h4 style="padding-left: 3.5rem; color:whitesmoke;">Полезная информация:</h4>
+                            <ul style="list-style-type: none;">
+                                <li><a class="hive-colors-a" href="#">Наш Форум</a></li>
+                                <li><a class="hive-colors-a" href="#">Наш Форум</a></li>
+                                <li><a class="hive-colors-a" href="#">Наш Форум</a></li>
+                                <li><a class="hive-colors-a" href="#">Наш Форум</a></li>
+                            </ul>
+                        </center>
+                    </div>
+                    <div class="col-md-4" style="padding-right:3rem; color:whitesmoke;">
+                            <center>
+                                <h4 style="padding-left: 3.5rem;">Наши партнеры:</h4>
+                                <ul style="list-style-type: none;">
+                                    <li><a class="hive-colors-a" href="#">Партнер1</a></li>
+                                    <li><a class="hive-colors-a" href="#">Партнер1</a></li>
+                                    <li><a class="hive-colors-a" href="#">Партнер1</a></li>
+                                    <li><a class="hive-colors-a" href="#">Партнер1</a></li>
+                                </ul>
+                            </center>
+                    </div>
+                    <div class="col-md-4">
+                        <center>
+                            <h4 style="color:whitesmoke;">Контактная информация:</h4>
+
+                        </center>
+                    </div>
+                </div>
+            </div>
+      </footer>
+</body>
+</html>
