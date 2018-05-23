@@ -4880,36 +4880,38 @@ input[type="button"].btn-block {
   background-color: #e9ecef;
   border-radius: 0.3rem;
 }
-.jumbotron-paral{
-  background: 
-  linear-gradient(
-    rgba(253, 166, 4, 0.288),
-    rgba(0, 0, 0, 0.411)
-  ),
-  url('../img/kek.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color:white !important;
-  height:275px;
-  background-size: 100%;
+@media (min-width: 738px){
+  .jumbotron-paral{
+    background: 
+    linear-gradient(
+      rgba(253, 166, 4, 0.288),
+      rgba(0, 0, 0, 0.411)
+    ),
+    url('../img/kek.jpg');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    color:white !important;
+    height:275px;
+    background-size: 100%;
   }
-
+  
   .page-scroll{
-  height:5000px;
+    height:5000px;
   }
+}
 
-  .btn-outline-danger{
+.btn-outline-danger{
   color:white;
   border-color:white;
   border-radius:0px;
   font-weight:100;
   margin-top:20px;
-  }
-  .lead{
+}
+.lead{
   font-family:raleway;
   font-weight:100;
   margin-top:-10px;
-  }
+}
 .jumbotron-bg1{
   background-image: url("../img/combine_bg.png");
 }
@@ -5824,6 +5826,7 @@ button.close {
 .carousel {
   position: relative;
 }
+
 
 .carousel-inner {
   position: relative;
