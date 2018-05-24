@@ -41,6 +41,9 @@
             display: block;
             background-size:100%;
             }
+            .hero_welcome{
+                color:#ffffff;
+            }
             /*
             .carousel-inner {
                 background: url("./img/bg3.jpg") bottom center no-repeat;
@@ -133,9 +136,11 @@
       </div>
       <div class="jumbotron jumbotron-fluid jumbotron-paral">
         <center>
-            <h1 style="color: #ffff">Здраствуйте</h1>
-            <h3 style="color: #ffff">Добро пожаловать на наш проект!</h3>
-            <h3 style="color: #ffff">Мы очень надеемся что вам у нас понравится!</h3>
+            <div id="hero_wl">
+                <h1 class="hero_welcome">Здраствуйте</h1>
+                <h3 class="hero_welcome">Добро пожаловать на наш проект!</h3>
+                <h3 class="hero_welcome">Мы очень надеемся что вам у нас понравится!</h3>
+            </div>
         </center>
       </div>
       <div class="container" id="about-hive">
@@ -329,7 +334,8 @@
                                 <b>Игроков: </b> <div class="progress">
                                       <div class="progress-bar bg-warning" style="width:25%">25/100</div>
                                       </div>
-                                </div>   
+                                </div>
+                                <button class="btn btn-outline-success my-2 my-sm-0" onclick="kek()">Click on me!</button>   
                             </center>
                     </div>
           </div>
@@ -377,11 +383,21 @@
         var screen_w = window.innerWidth;
         console.log(screen_h);
         console.log(screen_w);
-        
+        function kek(){
+            alert("Юра программист!");
+            setTimeout(alert("Миша дизайнер!"), 6000);
+        }
         if (screen_w >= 1000){
             document.getElementById("hero").style.display = "block";
         }else{
             document.getElementById("hero").style.display = "none";
+            var x=document.getElementById("hero_wl");
+            var y=x.getElementsByClassName("hero_welcome");
+            var i;
+            for(i=0;i<y.length;i++){
+                y[i].style.color = "#000000";
+            }
+            
         }
     </script>
 </body>
